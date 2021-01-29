@@ -23,3 +23,6 @@ To start **developing** react you should firstly install all packages in `node_m
 
 #### Stop running **production** container
 `./docker-scripts.sh stop`
+
+---
+Read about [traefik setup](https://github.com/dancheskus/traefik)
