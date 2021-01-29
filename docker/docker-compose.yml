@@ -1,0 +1,16 @@
+services:
+  service_name: # change this
+    container_name: ${PROJ_NAME}
+    working_dir: /app
+    ports: [3000]
+    labels:
+      - "traefik.http.routers.${PROJ_NAME}.rule=Host(`${DOMAIN}`)"
+      - "traefik.http.routers.${PROJ_NAME}.entrypoints=websecure" # name of 433 entrypoint
+      - "traefik.http.routers.${PROJ_NAME}.tls.certresolver=myresolver" # name of tls resolver
+      - "traefik.http.routers.${PROJ_NAME}.tls.domains[0].main=${DOMAIN}"
+      - "traefik.http.routers.${PROJ_NAME}.tls.domains[0].sans=www.${DOMAIN}"      
+
+networks:
+  default:
+    external:
+      name: traefik

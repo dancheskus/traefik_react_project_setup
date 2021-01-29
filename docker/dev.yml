@@ -1,0 +1,6 @@
+services:
+  service_name: # change this
+    image: mhart/alpine-node:latest
+    tty: true
+    volumes: [.:/app]
+    command: yarn start:react

@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "start": "./docker-scripts.sh",
+    "start:react": "react-scripts start"
+  }
+}

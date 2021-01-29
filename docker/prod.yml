@@ -1,0 +1,9 @@
+services:
+  service_name: # change this
+    build:
+      context: .
+      dockerfile: docker/dockerfile
+    restart: always      
+    environment:
+      NODE_ENV: production
+    command: serve -s -l 3000 build
