@@ -1,7 +1,7 @@
 # Basic traefik connected container setup
 
 This setup allows you to run react project in both **DEV** and **PROD** modes using docker environment.
-> If you want to use `npm` instead, just replace all yarn instances to corresponding npm commands
+> If you want to use `npm` instead, just replace all `yarn` instances to corresponding npm commands
 
 ---
 
